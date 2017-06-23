@@ -1,5 +1,6 @@
 package com.xuen.hadoop.zookeeper;
 
+import java.lang.management.ManagementFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.state.ConnectionStateListener;
@@ -15,6 +16,11 @@ public class DefaultZkClient implements ZkClient {
     public DefaultZkClient(CuratorFramework curatorFramework) {
         this.curatorFramework = curatorFramework;
     }
+
+    public DefaultZkClient() {
+    }
+
+    ;
 
     @Override
     public void registerListeners(ConnectionStateListener listener) {
@@ -56,4 +62,5 @@ public class DefaultZkClient implements ZkClient {
             }
         }
     }
+
 }
