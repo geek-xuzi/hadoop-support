@@ -1,6 +1,5 @@
 package com.xuen.hadoop.zookeeper;
 
-import java.lang.management.ManagementFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.state.ConnectionStateListener;
