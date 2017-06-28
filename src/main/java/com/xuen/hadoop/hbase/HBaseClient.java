@@ -1,7 +1,7 @@
 package com.xuen.hadoop.hbase;
 
 import java.io.IOException;
-import org.apache.hadoop.fs.shell.find.Result;
+import org.apache.hadoop.hbase.client.Result;
 
 /**
  * @author zheng.xu
@@ -15,5 +15,5 @@ public interface HBaseClient {
 
     void deleteRowKey(String tableName,String rowKey) throws IOException;
 
-    Result getValueByRowKey(String tableName,String rowKey);
+    Result getResultByRowKey(String tableName,String rowKey) throws IOException;
 }
