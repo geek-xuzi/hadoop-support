@@ -22,5 +22,9 @@ public interface FixByByteBuddy {
     void attach(String pid,String jarfilePath);
 
 
+    /**
+     * 获取当前进程的Instrumentation实例
+     * @return
+     */
     Instrumentation getInstrumentation();
 }
